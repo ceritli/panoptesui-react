@@ -1,0 +1,98 @@
+@import '../../../packages/theme/index.css';
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Sol Menü (Sidebar) .NET Core Eşliği ===== */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.sidebar-link {
+  color: #475569;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.sidebar-link:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+.sidebar-link.active {
+  background: linear-gradient(90deg, #eff6ff 0%, #eef2ff 100%);
+  color: #1d4ed8;
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 #2563eb;
+}
+
+.sidebar-group > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.sidebar-group > summary::-webkit-details-marker {
+  display: none;
+}
+.sidebar-group .chev {
+  transition: transform 0.2s ease;
+}
+.sidebar-group[open] .chev {
+  transform: rotate(90deg);
+}
+
+.sidebar-sub {
+  margin-left: 1.15rem;
+  padding-left: 0.5rem;
+  border-left: 1px dashed #cbd5e1;
+}
+.sidebar-sub .sidebar-link.active {
+  box-shadow: inset 3px 0 0 #2563eb;
+  border-radius: 0.5rem;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sidebar-group[open] > nav {
+  animation: fadeSlide 0.18s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

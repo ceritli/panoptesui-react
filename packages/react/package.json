@@ -1,0 +1,51 @@
+{
+  "name": "@panoptesui/react",
+  "version": "1.0.0",
+  "description": "Panoptes UI High-Performance Enterprise DataGrid and Components for React",
+  "main": "dist/panoptesui.umd.js",
+  "module": "dist/panoptesui.es.js",
+  "unpkg": "dist/panoptesui.umd.js",
+  "jsdelivr": "dist/panoptesui.umd.js",
+  "style": "dist/panoptesui.min.css",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build && cp ../theme/index.css dist/panoptesui.min.css && cp ../theme/index.css dist/index.css"
+  },
+  "keywords": [
+    "panoptes",
+    "panoptesui",
+    "react",
+    "grid",
+    "datagrid",
+    "components",
+    "enterprise-ui",
+    "tailwind",
+    "cdn",
+    "umd"
+  ],
+  "author": "Fatih Ceritli / Panoptes UI",
+  "homepage": "https://panoptesui.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceritli/panoptesui-react.git",
+    "directory": "packages/react"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "@panoptesui/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.0"
+  }
+}

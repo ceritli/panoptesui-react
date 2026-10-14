@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@panoptesui/core": ["../packages/core/src"],
+      "@panoptesui/react": ["../packages/react/src"],
+      "@panoptesui/theme": ["../packages/theme"],
+      "@panoptes/core": ["../packages/core/src"],
+      "@panoptes/react": ["../packages/react/src"],
+      "@panoptes/theme": ["../packages/theme"]
+    }
+  },
+  "include": ["src", "../packages/react/src", "../packages/core/src"]
+}

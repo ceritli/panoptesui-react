@@ -1,0 +1,32 @@
+{
+  "name": "panoptesui-react-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panoptes UI Components for React (Tailwind CSS, DataGrid, 40+ Enterprise Components)",
+  "workspaces": [
+    "packages/*",
+    "demo"
+  ],
+  "scripts": {
+    "dev": "npm --workspace=demo run dev",
+    "build": "npm run --workspaces --if-present build",
+    "build:packages": "npm --workspace=@panoptesui/core run build && npm --workspace=@panoptesui/react run build",
+    "build:demo": "npm --workspace=demo run build"
+  },
+  "keywords": [
+    "panoptes",
+    "react",
+    "grid",
+    "datagrid",
+    "components",
+    "enterprise-ui",
+    "tailwind"
+  ],
+  "author": "Fatih Ceritli / Panoptes UI",
+  "homepage": "https://panoptesui.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceritli/panoptesui-react.git"
+  },
+  "license": "MIT"
+}

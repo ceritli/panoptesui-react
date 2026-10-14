@@ -1,0 +1,15 @@
+{
+  "name": "@panoptesui/theme",
+  "version": "1.0.0",
+  "description": "Panoptes UI Tailwind CSS Presets and Styles",
+  "main": "index.js",
+  "style": "index.css",
+  "author": "Fatih Ceritli / Panoptes UI",
+  "license": "MIT",
+  "homepage": "https://panoptesui.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceritli/panoptesui-react.git",
+    "directory": "packages/theme"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@panoptesui/core",
+  "version": "1.0.0",
+  "description": "Core data protocols, dynamic filtering, sorting and query engine for Panoptes UI",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "panoptes",
+    "panoptesui",
+    "core",
+    "grid",
+    "datasource",
+    "filtering",
+    "sorting",
+    "pagination"
+  ],
+  "author": "Fatih Ceritli / Panoptes UI",
+  "homepage": "https://panoptesui.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ceritli/panoptesui-react.git",
+    "directory": "packages/core"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

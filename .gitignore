@@ -1,0 +1,20 @@
+## Node & Build
+node_modules/
+dist/
+build/
+.tsbuildinfo
+*.tsbuildinfo
+
+## OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+## IDEs
+.vscode/
+.idea/
+*.log
